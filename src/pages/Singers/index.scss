@@ -1,0 +1,51 @@
+@import 'src/assets/styles/common.scss';
+
+.nav-container {
+  box-sizing: border-box;
+  position: fixed;
+  top: 95px;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.singer-list {
+  position: fixed;
+  top: 160px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  .list {
+    //   .title {
+    //     margin: 10px 0 10px 10px;
+    //     color: $font-color-desc;
+    //     font-size: $font-size-s;
+    //   }
+
+    .list-item {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      margin: 0 5px;
+      padding: 5px 0;
+      border-bottom: 1px solid $border-color;
+
+      .img-wrapper {
+        margin-right: 20px;
+
+        img {
+          border-radius: 3px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      .name {
+        font-size: $font-size-m;
+        color: $font-color-desc;
+        font-weight: 500;
+      }
+    }
+  }
+}
